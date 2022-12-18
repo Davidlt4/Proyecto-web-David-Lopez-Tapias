@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+/*Variables globales*/
+:root{
+    --font-family:'Lemonada',cursive;
+    --font-family_menu:'Luckiest Guy', cursive;
+}
+
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+/*En este apartado colocamos una imagen de fondo que cubra el body por completo y establecemos como fuente Lemonada a través de la variable font-family*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F5F5F5;
+    background-image:url(../img/inicio/fondo6.png);
+    background-size: cover;
+    font-family: var(--font-family);
+    color: #FFFFFF;
+}
+
+
+/*Header con una flex box direccionada en fila para ordenar los elemento del menú*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #F5F5F5;
+    position:relative;
+    top: 0;
+    margin: 0px;
+    border: 0px;
+}
+
+
+/*Ponemos un float left al logo para que se vea a la izquierda del header*/
+header #logo{
+    float: left;
+    overflow: hidden; 
+    padding: 10px;
+}
+
+/*Ponemos un float right al resto del menú para que se vea a la derecha del header*/
+header #menu{
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+
+/*Quitamos el estilo de lista para que no se vean los típicos puntos negros de listado*/
+header nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+/*TODO LO RELACIONADO CON LOS ELEMENTOS LI PARA QUE SE VEA COMO UN MENÚ Y NO COMO UN LISTADO*/
+
+header nav ul li {
+    float: left;
+    font-family:var(--font-family_menu);
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #2068A8;
+    font-weight:normal;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color:#64BCEC;
+}
+
+/*Personalizamos el botón*/
+header nav ul li button{
+    background-color: #E34A31;
+    display:flex;
+    /*para que se vea el cursor como clickable cuando se pasa por encima del botón*/
+    cursor: pointer;
+    flex-direction: row;
+    font-size: 27px;
+    border-radius: 50px;
+    border: solid #E34A31;
+}
+
+header nav ul li button:hover{
+    background-color: black;
+    border: solid black;
+}
+
+header nav ul li button a{
+    font-family:var(--font-family_menu);
+    color: #F5F5F5;
+}
+
+header nav ul li button a:hover{
+    color: #E34A31;
+}
+
+/*-------------------------------------------------------*/
+
+/*Parte central de la página(texto a la izquierda y foto a la derecha) organizado con flex*/
+
+main{
+    position:relative;
+}
+
+/*Agrupa el texto colocado al lado de la imagen principal(Los dos personajes rubios) y la imagen principal*/
+#contenido{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+
+/*Imagen principal*/
+#aether{
+    position: relative;
+    margin-bottom: 0;
+    width:640px;
+    height:700px;
+    border-radius:50px;
+}
+
+/*Texto y logo a la izquierda de la imagen principal*/
+#contenido section{
+    font-size:20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/*Logo genshin impact blanco*/
+#logo_contenido{
+    width: 400px;
+    height: 220px;
+    
+}
+
+/*texto debajo del logo*/
+#contenido section p{
+    width: 80%;
+    margin: auto;
+}
+
+/*Establecemos un space around para dejar un hueco entre ambos botones dentro de la flex box*/
+#descarga{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Botones de descarga*/
+#descarga button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: #3C7CB4;
+    border-radius: 30px;
+    padding: 5px;
+    border: solid 5px #FFFFFF;
+    width: 230px;
+    height: 50px;
+}
+
+#descarga button img{
+    margin-right: 10px;
+}
+
+#descarga a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 20px;
+    margin: 0;
+}
+
+
+/*Todo relacionado con el footer, también organizado con flex*/
+footer{
+    background-color: #3C7CB4;
+    font-family:var(--font-family);
+    color: #f5f5f5;
+    position:relative;
+    bottom: 0;
+    margin: 0px;
+}
+
+footer p{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+footer ul {
+    list-style: none;
+    overflow: hidden; 
+}
+
+footer ul li {
+    float: left;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+footer ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/*redes sociles(twitter,discord y youtube) situados en el footer*/
+#redes{
+    background-color: #64bcece3;
+    padding: 2px;
+   
+}
+
+/*Los enlaces hacía la política*/
+#politica{
+    text-align: center;
+}
+
+/*Logo genshin impact del footer*/
+#politica img{
+    width: 230px;
+    height: 140px;
+}
+
+
+/*utilizamos un space between para dejar un espacio entre las diferentes opciones de política*/
+#politica ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#politica ul li{
+    width: 100%;
+    margin-right: 10px;
+}
+
+
+/*Imágenes de advertencia de pegi y esrb del footer*/
+#advertencias{
+    display: flex;
+    justify-content: center;
+}
+
+.advertencia{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f5f5f5;
+}
