@@ -249,7 +249,7 @@ header nav ul li button a:hover {
 }
 
 .clearfix {
-  *zoom: 1;
+  zoom: 1;
 }
 .clearfix:before {
   content: " ";
