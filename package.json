@@ -1,0 +1,33 @@
+{
+  "name": "proyecto-web-david-lopez-tapias",
+  "version": "1.0.0",
+  "description": "",
+  "browserlist":"> 0.2%, not dead, last 4 versions",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel:desarrollo":"parcel ProyectoGenshinWeb/index.html",
+    "parcel:produccion":"parcel build ProyectoGenshinWeb/index.html",
+    "limpiar": "rimraf dist",
+    "desarrollo": "npm-run-all limpiar parcel:desarrollo",
+    "produccion": "npm-run-all limpiar parcel:produccion"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidlt4/Proyecto-web-David-Lopez-Tapias.git"
+  },
+  "author": "David López Tapias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davidlt4/Proyecto-web-David-Lopez-Tapias/issues"
+  },
+  "homepage": "https://github.com/Davidlt4/Proyecto-web-David-Lopez-Tapias#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "sass": "^1.58.0"
+  }
+}

@@ -1,0 +1,292 @@
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: #F5F5F5;
+	position: relative;
+	top: 0;
+	margin: 0px;
+	border: 0px;
+	#logo {
+		float: left;
+		overflow: hidden;
+		padding: 10px;
+	}
+	#menu {
+		float: right;
+		margin-right: 10px;
+		margin-top: 20px;
+	}
+	nav {
+		ul {
+			list-style: none;
+			overflow: hidden;
+			margin: 0;
+			li {
+				float: left;
+				font-family: $font-family_menu;
+				margin-right: 50px;
+				font-size: 30px;
+				a {
+					display: block;
+					padding: 10px;
+					text-align: center;
+					color: $color_1;
+					font-weight: normal;
+					text-decoration: none;
+					&:hover {
+						color: $color_2;
+					}
+				}
+				button {
+					background-color: $color_4;
+					display: flex;
+					cursor: pointer;
+					flex-direction: row;
+					font-size: 27px;
+					border-radius: 50px;
+					border: solid #E34A31;
+					&:hover {
+						background-color: $color_6;
+						border: solid black;
+					}
+					a {
+						font-family: $font-family_menu;
+						color: $color_3;
+						&:hover {
+							color: $color_4;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#pagina {
+	display: none;
+}
+.clearfix {
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	*zoom: 1;
+}
+.pagina {
+	width: 80%;
+	margin: auto;
+}
+.barra-menu {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.menu {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.lista-menu {
+	li {
+		display: inline-block;
+		width: 25%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		&:last-child {
+			border-right: none;
+		}
+	}
+	a {
+		display: block;
+		margin-top: 30px;
+		width: 100%;
+		height: 3em;
+		text-decoration: none;
+		color: $color_1;
+
+		&:hover {
+			color: $color_2;
+		}
+	}
+}
+.btn-menu {
+	display: block;
+	margin-top: 30px;
+	width: 100%;
+	height: 3em;
+	display: none;
+	text-decoration: none;
+	color: $color_1;
+}
+#btn-drop {
+	padding: 1rem;
+	align-items: center;
+	img {
+		margin-right: 20px;
+	}
+}
+.aln-izquierda {
+	text-align: left;
+}
+.aln-centro {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.aln-derecha {
+	text-align: right;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	header {
+		flex: 50%;
+		nav {
+			ul {
+				li {
+					font-size: 1rem;
+					button {
+						font-size: 1rem;
+						margin-bottom: 5px;
+						a {
+							font-size: 0.75rem;
+						}
+					}
+				}
+			}
+		}
+		#logo {
+			height: 30px;
+		}
+	}
+	#fantasma {
+		width: 30px;
+		height: 30px;
+	}
+	#deseo {
+		width: 30px;
+		height: 30px;
+	}
+	#logo-menu {
+		width: 110px;
+		height: 35px;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1105px) {
+	header {
+		nav {
+			ul {
+				li {
+					font-size: 1.50rem;
+					button {
+						font-size: 1.50rem;
+						a {
+							font-size: 1rem;
+							padding-bottom: 0px;
+						}
+					}
+				}
+			}
+		}
+		#logo {
+			height: 40px;
+		}
+	}
+	#fantasma {
+		width: 35px;
+		height: 35px;
+	}
+	#deseo {
+		width: 30px;
+		height: 30px;
+	}
+	#logo-menu {
+		width: 100px;
+		height: 35px;
+	}
+}
+@media screen and (max-width: 768px) {
+	#menu {
+		display: none;
+	}
+	header {
+		margin: 0;
+		padding: 0;
+	}
+	#logo {
+		display: none;
+	}
+	#pagina {
+		display: inline;
+		width: 100%;
+	}
+	.btn-menu {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+	#btn-drop {
+		text-align: right;
+	}
+	.cabecera-menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	#submenu {
+		display: none;
+	}
+	.lista-menu {
+		li {
+			display: block;
+			float: none;
+			width: 100%;
+		}
+	}
+}
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+	header {
+		padding: 15px;
+		nav {
+			ul {
+				li {
+					font-size: 3.50rem;
+					button {
+						font-size: 3.50rem;
+						a {
+							font-size: 3.25rem;
+							padding-bottom: 0px;
+						}
+					}
+				}
+			}
+		}
+		#logo {
+			height: 100%;
+		}
+	}
+	#fantasma {
+		width: 75px;
+		height: 75px;
+	}
+	#deseo {
+		width: 100px;
+		height: 100px;
+	}
+	#logo-menu {
+		width: 250px;
+		height: 105px;
+	}
+}
