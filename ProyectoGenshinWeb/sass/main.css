@@ -249,7 +249,7 @@ header nav ul li button a:hover {
 }
 
 .clearfix {
-  zoom: 1;
+  *zoom: 1;
 }
 .clearfix:before {
   content: " ";
@@ -614,8 +614,8 @@ main {
     width: 80%;
   }
   #logo_contenido {
-    width: 70%;
-    height: 20vw;
+    width: 60%;
+    height: 30vw;
   }
   #descarga button {
     width: 135px;
