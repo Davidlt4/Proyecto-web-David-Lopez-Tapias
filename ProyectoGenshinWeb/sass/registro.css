@@ -1,9 +1,7 @@
-
 :root {
     --font-family: "Lemonada",cursive;
 }
 
-  
 .cont-formulario{
     display: flex;
     box-sizing: border-box;    
@@ -49,7 +47,6 @@
     box-shadow: 0px 0px 8px #2068A8;
 }
 
-
 .formulario input[type=submit]{
     width: 40%;
     margin: auto;
@@ -74,4 +71,100 @@
 
 footer{
     margin-top: 250px;
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+
+    body{
+        font-size: 0.65rem;
+    }
+
+    .formulario{
+        width: 60%;
+    }
+
+    .formulario input::placeholder{
+        font-size: 0.65rem;
+    }
+
+    .formulario input[type=submit],.formulario input[type=submit]:hover{
+        font-size: 0.55rem;
+        width: 80px;
+        height: 30px;
+    }
+
+}
+
+@media screen and (min-width:426px) and (max-width: 768px){
+
+    body{
+        font-size: 0.75rem;
+    }
+
+    .formulario{
+        width: 55%;
+    }
+
+    .formulario input[type=submit],.formulario input[type=submit]:hover{
+        font-size: 0.60rem;
+        width: 90px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    body{
+        font-size: 1rem;
+    }
+
+    .formulario{
+        width: 40%;
+    }
+
+    .formulario input[type=submit],.formulario input[type=submit]:hover{
+        font-size: 0.65rem;
+        width: 120px;
+        height: 40px;
+    }
+
+}
+
+
+@media screen and (min-width: 2045px) and (max-width: 2560px){
+
+    body{
+        font-size: 2rem;
+    }
+
+    .formulario{
+        width: 35%;
+    }
+
+    .cont-formulario img{
+        top:-150px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .cont-formulario{
+        margin-top: 250px;
+    }
+
+    .formulario input{
+        padding: 15px;
+    }
+
+    .formulario input::placeholder{
+        font-size: 1.50rem;
+    }
+
+    .formulario input[type=submit],.formulario input[type=submit]:hover{
+        font-size: 1.50rem;
+        width: 200px;
+        height: 80px;
+        border-radius: 50px;
+    }
+
 }
