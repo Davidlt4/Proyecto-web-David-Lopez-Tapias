@@ -1,5 +1,7 @@
 body{
-    background-image: url("../img/inicio/fondo7.png");
+    background-image: url("../img/inicio/fondo8.png");
+    background-attachment: fixed;
+    background-color: transparent;
 }
 
 .noticia{
