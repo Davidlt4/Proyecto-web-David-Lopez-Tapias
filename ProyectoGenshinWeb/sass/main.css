@@ -6,7 +6,7 @@
 @import "https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap";
 footer {
   background-color: #3C7CB4;
-  font-family: var(--font-family);
+  font-family: var(--font-family) !important;
   color: #F5F5F5;
   position: relative;
   bottom: 0;
@@ -190,11 +190,10 @@ header {
   top: 0;
   margin: 0px;
   border: 0px;
+  padding: 10px;
 }
 header #logo {
   float: left;
-  overflow: hidden;
-  padding: 10px;
 }
 header #menu {
   float: right;
@@ -339,14 +338,15 @@ header nav ul li button a:hover {
     flex: 50%;
   }
   header nav ul li {
-    font-size: 1rem;
+    font-size: 1.15rem;
+    margin-right: 40px;
   }
   header nav ul li button {
-    font-size: 1rem;
+    font-size: 1.15rem;
     margin-bottom: 5px;
   }
   header nav ul li button a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
   header #logo {
     height: 30px;
@@ -478,7 +478,7 @@ body {
   background-color: #F5F5F5;
   background-image: url(../img/inicio/fondo6.png);
   background-size: cover;
-  font-family: var(--font-family);
+  font-family: var(--font-family) !important;
   color: #FFFFFF;
 }
 
@@ -543,7 +543,7 @@ main {
 #descarga a {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: var(--font-family);
+  font-family: var(--font-family) !important;
   font-size: 20px;
   margin: 0;
 }
@@ -592,7 +592,7 @@ main {
   #descarga-mov a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
     font-size: 1rem;
     margin: 0;
   }
@@ -601,21 +601,21 @@ main {
     height: 25vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 995px) {
   #aether {
     margin-bottom: 0;
     width: 100%;
-    height: 60vw;
+    height: 66vw;
   }
   #contenido section {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   #contenido section p {
-    width: 80%;
+    width: 85%;
   }
   #logo_contenido {
-    width: 60%;
-    height: 30vw;
+    width: 55%;
+    height: 25vw;
   }
   #descarga button {
     width: 135px;
@@ -630,7 +630,41 @@ main {
   #descarga a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 995px) and (max-width: 1024px) {
+  #aether {
+    margin-bottom: 0;
+    width: 100%;
+    height: 60vw;
+  }
+  #contenido section {
+    font-size: 0.9rem;
+  }
+  #contenido section p {
+    width: 85%;
+  }
+  #logo_contenido {
+    width: 60%;
+    height: 25vw;
+  }
+  #descarga button {
+    width: 135px;
+    height: 45px;
+    border: solid 3px white;
+    margin-top: 30px;
+  }
+  #descarga button img {
+    width: 20px;
+    height: 20px;
+  }
+  #descarga a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: var(--font-family) !important;
     font-size: 0.75rem;
     margin: 0;
   }
@@ -661,7 +695,7 @@ main {
   #descarga a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
     font-size: 0.9rem;
     margin: 0;
   }
@@ -692,7 +726,7 @@ main {
   #descarga a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
     font-size: 1rem;
     margin: 0;
   }
@@ -723,7 +757,7 @@ main {
   #descarga a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
     font-size: 1rem;
     margin: 0;
   }
@@ -743,7 +777,7 @@ main {
   #descarga a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
     font-size: 1.75rem;
     margin: 0;
   }
@@ -775,7 +809,7 @@ main {
   #descarga a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
     font-size: 2rem;
     margin: 0;
   }

@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/Davidlt4/Proyecto-web-David-Lopez-Tapias#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
     "npm-run-all": "^4.1.5",
     "remixicon": "^2.5.0",
     "rimraf": "^4.1.2"
