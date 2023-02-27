@@ -4,6 +4,8 @@
 /*footer*/
 @import "https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap";
 footer {
   background-color: #3C7CB4;
   font-family: var(--font-family) !important;
@@ -180,6 +182,11 @@ footer ul li a:hover {
     height: 135px;
   }
 }
+:root {
+  --font-family: "Lemonada",cursive;
+  --font-family_menu: "Luckiest Guy", cursive;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -207,7 +214,7 @@ header nav ul {
 }
 header nav ul li {
   float: left;
-  font-family: var(--font-family_menu);
+  font-family: var(--font-family_menu) !important;
   margin-right: 50px;
   font-size: 30px;
 }
@@ -236,7 +243,7 @@ header nav ul li button:hover {
   border: solid black;
 }
 header nav ul li button a {
-  font-family: var(--font-family_menu);
+  font-family: var(--font-family_menu) !important;
   color: #F5F5F5;
 }
 header nav ul li button a:hover {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
 
 
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <link rel="icon" href="../img/header/deseo.png">
@@ -17,10 +19,12 @@
     <link rel="stylesheet" href="../sass/main.css">
     <link rel="stylesheet" href="../sass/noticias.css">
     
+    <script type="module" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
 
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="../script/navbar.js"></script>
 
+    
     
 </head>
 <body>
@@ -35,7 +39,7 @@
                 <ul>
                     <li><a href="./builds.html">Builds</a></li>
                     <li><a href="./guias.html">Guías</a></li>
-                    <li><a href="./noticias.html">Noticia</a></li>
+                    <li><a href="./noticias.html">Noticias</a></li>
                     <li><button><img src="../img/header/fantasma.png" width="50" height="50" id="fantasma"><a href="./registrate.html">REGISTRATE</a></button></li>
                 </ul>
             </nav>
@@ -67,36 +71,116 @@
     </header>
     
     <main>
+
+      <h2>NOTICIAS DESTACADAS</h2>
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+
+          <!--Elemento 1 del carousel-->
+
+          <div class="carousel-item active">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="m-auto col-10 col-sm-8 col-lg-6">
+                    <img src="../img/noticias/cielo_estrellado.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">Cielo estrellado</h1>
+                    <p class="lead text-light">Durante el evento, colecciona las cartas de fuegos artificiales y colócalas en el inventario. Completa las misiones diarias para obtener oportunidades adicionales de búsqueda.Cuando tengas la colección de las diez cartas de fuegos artificiales, podrás reclamar Protogemas y otras recompensas del juego</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">Más información</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
+
+          <!--Elemento 2 del carousel-->
+          <div class="carousel-item">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="m-auto col-10 col-sm-8 col-lg-6">
+                    <img src="../img/noticias/noticia2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">Vista previa de la versión 3.5</h1>
+                    <p class="lead text-light">Hay quien piensa que el destino se esconde en el viento, como la fragancia de las flores, como el rocío matutino...Es la ley de la naturaleza, que nunca puede ser superada.
+                    Otros están más interesados en descubrir el destino por sí mismos, o incluso en volver a tejerlo...¿Acaso no todo es obra del destino?</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">Más información</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
+
+          <!--Elemento 3 del carousel-->
+          <div class="carousel-item">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="m-auto col-10 col-sm-8 col-lg-6">
+                    <img src="../img/noticias/noticia3.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-light lh-1 mb-3">Alas del tapiz estrellado</h1>
+                    <p class="lead text-light">Desde diciembre de 2022 hasta mayo de 2023, los miembros de Prime Gaming podrán reclamar un código de paquete de Genshin Impact de forma gratuita en Prime Gaming y canjear varios objetos del juego. Los paquetes se actualizan cada tres semanas. Si has canjeado 4 o más códigos durante el evento colaborativo, recibirás dicho planeador.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">Más información</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
         
+
+        <h2>OTRAS NOTICIAS</h2>
+
+
+        <!--Noticia 1-->
+
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="../img/noticias/cielo_estrellado.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <div class="m-auto col-10 col-sm-8 col-lg-6">
+                <img src="../img/noticias/noticia5.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-light lh-1 mb-3">Cielo estrellado</h1>
-                <p class="lead text-light">Durante el evento, colecciona las cartas de fuegos artificiales y colócalas en el inventario. Completa las misiones diarias para obtener oportunidades adicionales de búsqueda.Cuando tengas la colección de las diez cartas de fuegos artificiales, podrás reclamar Protogemas y otras recompensas del juego</p>
+                <h1 class="display-5 fw-bold text-light lh-1 mb-3">Expedición de sabores</h1>
+                <p class="lead text-light">Esponjosas bolitas de harina servidas con salsa de carne, un aperitivo estupendo y fácil de llevar.Con este antiguo manjar, que es un legado culinario de más de mil años, te llenarás de la sabiduría y bendiciones de los antepasados de Liyue.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Más información</button>
+                <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">Más información</button>
                 </div>
             </div>
             </div>
         </div>
 
+        <!--Noticia 2-->
+
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="../img/noticias/cielo_estrellado.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <div class="m-auto col-10 col-sm-8 col-lg-6">
+                <img src="../img/noticias/noticia4.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-light lh-1 mb-3">Cielo estrellado</h1>
-                <p class="lead text-light">Durante el evento, colecciona las cartas de fuegos artificiales y colócalas en el inventario. Completa las misiones diarias para obtener oportunidades adicionales de búsqueda.Cuando tengas la colección de las diez cartas de fuegos artificiales, podrás reclamar Protogemas y otras recompensas del juego</p>
+                <h1 class="display-5 fw-bold text-light lh-1 mb-3">El Gran Torneo de Escaradiablos de Arataki</h1>
+                <p class="lead text-light">El evento «El Sublime y Glorioso Gran Torneo de Escaradiablos de Arataki» comenzará el 16 de febrero de 2023 10:00. Podrás unirte a la Banda de Arataki y enfrentar los desafíos de varios oponentes. Antes de entrar al combate, aquí traemos algunos consejos útiles.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Más información</button>
+                <button type="button" class="btn btn-danger btn-lg px-4 me-md-2"><a href="https://genshin.hoyoverse.com/es/news/detail/105330">Más información</a></button>
                 </div>
             </div>
             </div>
         </div>
+
 
     </main>
     
