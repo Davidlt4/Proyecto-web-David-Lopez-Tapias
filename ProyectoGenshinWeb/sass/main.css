@@ -467,6 +467,169 @@ header nav ul li button a:hover {
     height: 105px;
   }
 }
+.cont-formulario {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 20px;
+  margin-top: 150px;
+}
+.cont-formulario img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: -70px;
+  margin: auto;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 30%;
+  padding: 20px;
+  color: #2068A8;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
+}
+.formulario input {
+  border: 1px solid black;
+  outline: none;
+  transition: all 200ms;
+  border-radius: 3px;
+  padding: 0.4rem;
+  margin-bottom: 10px;
+}
+.formulario input:focus {
+  transition: all 300ms;
+  border: 1px solid #2068A8;
+  box-shadow: 0px 0px 8px #2068A8;
+}
+.formulario input[type=submit] {
+  width: 40%;
+  margin: auto;
+  border: solid 1px #E34A31;
+  border-radius: 20px;
+  background-color: #E34A31;
+  color: #F5F5F5;
+  font-size: 15px;
+  font-family: var(--font-family) !important;
+}
+.formulario input[type=submit]:hover {
+  width: 40%;
+  margin: auto;
+  border: solid 1px black;
+  border-radius: 20px;
+  background-color: black;
+  color: #E34A31;
+  font-size: 15px;
+  font-family: var(--font-family) !important;
+}
+
+footer {
+  margin-top: 250px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  body {
+    font-size: 0.65rem;
+  }
+  .formulario {
+    width: 60%;
+  }
+  .formulario input::-moz-placeholder {
+    font-size: 0.65rem;
+  }
+  .formulario input::placeholder {
+    font-size: 0.65rem;
+  }
+  .formulario input[type=submit] {
+    font-size: 0.55rem;
+    width: 80px;
+    height: 30px;
+  }
+  .formulario input[type=submit]:hover {
+    font-size: 0.55rem;
+    width: 80px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    font-size: 0.75rem;
+  }
+  .formulario {
+    width: 55%;
+  }
+  .formulario input[type=submit] {
+    font-size: 0.6rem;
+    width: 90px;
+    height: 40px;
+  }
+  .formulario input[type=submit]:hover {
+    font-size: 0.6rem;
+    width: 90px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+  .formulario {
+    width: 40%;
+  }
+  .formulario input[type=submit] {
+    font-size: 0.65rem;
+    width: 120px;
+    height: 40px;
+  }
+  .formulario input[type=submit]:hover {
+    font-size: 0.65rem;
+    width: 120px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 2045px) and (max-width: 2560px) {
+  body {
+    font-size: 2rem;
+  }
+  .formulario {
+    width: 35%;
+  }
+  .formulario input {
+    padding: 15px;
+  }
+  .formulario input::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  .formulario input::placeholder {
+    font-size: 1.5rem;
+  }
+  .formulario input[type=submit] {
+    font-size: 1.5rem;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+  }
+  .formulario input[type=submit]:hover {
+    font-size: 1.5rem;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+  }
+  .cont-formulario {
+    margin-top: 250px;
+  }
+  .cont-formulario img {
+    top: -150px;
+    width: 250px;
+    height: 250px;
+  }
+}
 :root {
   --font-family: "Lemonada",cursive;
   --font-family_menu: "Luckiest Guy", cursive;
