@@ -1,0 +1,33 @@
+body {
+	background-image: url("../img/inicio/fondo8.png");
+	background-attachment: fixed;
+	background-color: transparent;
+	h1 {
+		text-shadow: 0 0 10px black;
+	}
+	h2 {
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 0px;
+		text-shadow: 0 0 10px black;
+	}
+}
+button {
+	background-color: $color_5;
+	color: $color_1;
+}
+a {
+	text-decoration: none;
+	color: $color_5;
+	&:hover {
+		color: $color_6;
+	}
+}
+footer {
+	ul {
+		padding: 10px;
+		li {
+			margin-top: 10px;
+		}
+	}
+}
