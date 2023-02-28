@@ -254,6 +254,9 @@ header nav ul li button a:hover {
   display: none;
 }
 
+.clearfix {
+  *zoom: 1;
+}
 .clearfix:before {
   content: " ";
   display: table;
@@ -464,6 +467,87 @@ header nav ul li button a:hover {
     height: 105px;
   }
 }
+body {
+  background-image: url("../img/inicio/fondo8.png");
+  background-attachment: fixed;
+  background-color: transparent;
+}
+
+.noticia {
+  margin: auto;
+  margin-top: 100px;
+  width: 80%;
+  display: grid;
+  box-shadow: 0px 0px 20px black;
+  background-color: rgba(245, 245, 245, 0.7411764706);
+  border-radius: 30px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "titulo titulo" "imagen imagen" "contenido contenido";
+}
+
+.titulo {
+  background-color: #2068A8;
+  color: #FFFFFF;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: 0;
+  grid-area: titulo;
+  text-align: center;
+}
+
+.contenido {
+  color: black;
+  margin: 15px;
+  padding: 10px;
+  grid-area: contenido;
+  margin-bottom: 100px;
+}
+.contenido h3 {
+  color: #2068A8;
+}
+
+.imagen {
+  margin: auto;
+  margin-top: 30px;
+  grid-area: imagen;
+}
+
+#ultima {
+  margin-bottom: 150px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  body {
+    font-size: 0.65rem;
+  }
+  .contenido {
+    font-size: 0.65rem;
+  }
+  .guia {
+    width: 100%;
+  }
+  picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 15px;
+  }
+  .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .contenido {
+    font-size: 0.8rem;
+  }
+}
 .cont-formulario {
   display: flex;
   box-sizing: border-box;
@@ -472,6 +556,7 @@ header nav ul li button a:hover {
   width: 100vw;
   padding: 20px;
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 .cont-formulario img {
   position: absolute;
@@ -512,7 +597,7 @@ header nav ul li button a:hover {
   border-radius: 20px;
   background-color: #E34A31;
   color: #F5F5F5;
-  font-size: 15px;
+  font-size: 10px;
   font-family: var(--font-family) !important;
 }
 .formulario input[type=submit]:hover {
@@ -524,10 +609,6 @@ header nav ul li button a:hover {
   color: #E34A31;
   font-size: 15px;
   font-family: var(--font-family) !important;
-}
-
-footer {
-  margin-top: 250px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
@@ -1014,86 +1095,4 @@ footer ul {
 }
 footer ul li {
   margin-top: 10px;
-}
-
-body {
-  background-image: url("../img/inicio/fondo8.png");
-  background-attachment: fixed;
-  background-color: transparent;
-}
-
-.noticia {
-  margin: auto;
-  margin-top: 100px;
-  width: 80%;
-  display: grid;
-  box-shadow: 0px 0px 20px black;
-  background-color: rgba(245, 245, 245, 0.7411764706);
-  border-radius: 30px;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "titulo titulo" "imagen imagen" "contenido contenido";
-}
-
-.titulo {
-  background-color: #2068A8;
-  color: #FFFFFF;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  margin: 0;
-  grid-area: titulo;
-  text-align: center;
-}
-
-.contenido {
-  color: black;
-  margin: 15px;
-  padding: 10px;
-  grid-area: contenido;
-  margin-bottom: 100px;
-}
-.contenido h3 {
-  color: #2068A8;
-}
-
-.imagen {
-  margin: auto;
-  margin-top: 30px;
-  grid-area: imagen;
-}
-
-footer {
-  margin-top: 100px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  body {
-    font-size: 0.65rem;
-  }
-  .contenido {
-    font-size: 0.65rem;
-  }
-  .guia {
-    width: 100%;
-  }
-  picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 15px;
-  }
-  .imagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-}
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  body {
-    font-size: 0.8rem;
-  }
-  .contenido {
-    font-size: 0.8rem;
-  }
 }/*# sourceMappingURL=main.css.map */
