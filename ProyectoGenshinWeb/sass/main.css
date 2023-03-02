@@ -750,7 +750,7 @@ main {
   margin: auto;
 }
 
-#aether {
+.aether {
   position: relative;
   margin-bottom: 0;
   width: 640px;
@@ -801,7 +801,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  #aether {
+  .aether {
     display: none;
   }
   #contenido {
@@ -850,7 +850,7 @@ main {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 995px) {
-  #aether {
+  .aether {
     margin-bottom: 0;
     width: 100%;
     height: 66vw;
@@ -884,7 +884,7 @@ main {
   }
 }
 @media screen and (min-width: 995px) and (max-width: 1024px) {
-  #aether {
+  .aether {
     margin-bottom: 0;
     width: 100%;
     height: 60vw;
@@ -918,7 +918,7 @@ main {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1105px) {
-  #aether {
+  .aether {
     margin-bottom: 0;
     width: 100%;
     height: 60vw;
@@ -949,7 +949,7 @@ main {
   }
 }
 @media screen and (min-width: 1105px) and (max-width: 1220px) {
-  #aether {
+  .aether {
     margin-bottom: 0;
     width: 100%;
     height: 60vw;
@@ -980,7 +980,7 @@ main {
   }
 }
 @media screen and (min-width: 1525px) {
-  #aether {
+  .aether {
     margin-bottom: 0;
     width: 100%;
     height: 54vw;
@@ -1031,7 +1031,7 @@ main {
   }
 }
 @media screen and (min-width: 2045px) and (max-width: 2560px) {
-  #aether {
+  .aether {
     margin-bottom: 0;
     width: 100%;
     height: 54vw;
