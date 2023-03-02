@@ -254,9 +254,6 @@ header nav ul li button a:hover {
   display: none;
 }
 
-.clearfix {
-  *zoom: 1;
-}
 .clearfix:before {
   content: " ";
   display: table;
