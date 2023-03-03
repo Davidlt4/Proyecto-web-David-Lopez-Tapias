@@ -1,13 +1,16 @@
 # Proyecto-web-David-Lopez-Tapias
 
-Descripción de mi página:
+##Descripción de mi página:
 
-En nuestra página, encontrarás toda la información que necesitas sobre el juego de Genshin Impact, incluyendo noticias, actualizaciones y guías de juego.
+Página web dedicada a Genshin Impact,el popular juego de rol de acción de mundo abierto! Aquí encontrarás todo lo que necesitas para sumergirte en el vasto y emocionante mundo de Teyvat.
+
+En nuestra página, encontrarás toda la información que necesitas sobre el juego de Genshin Impact, ofreciendo una gran cantidad de contenido exclusivo, noticias frescas y detalladas guías para ayudarte a sacar el máximo provecho del juego...
+
 Aquí encontrarás cosas muy interesantes sobre la comunidad de Genshin Impact y tendrás toda la información necesaria para estar al día.
 
 Proyecto web para el módulo de Diseño de Interfaces del grado DAW
 
-En la documentación se deberá incluir:
+##En la documentación se deberá incluir:
 
 1.Project description
 2.Project requirements
