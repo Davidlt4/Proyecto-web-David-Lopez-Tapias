@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "parcel:desarrollo": "parcel ProyectoGenshinWeb/index.html",
-    "parcel:produccion": "parcel build ProyectoGenshinWeb/index.html",
-    "limpiar": "rimraf dist",
+    "parcel:produccion": "parcel build ProyectoGenshinWeb/index.html --public-url './'",
+    "limpiar": "rimraf dist .cache .parcel-cache .cache-loader",
     "desarrollo": "npm-run-all limpiar parcel:desarrollo",
     "produccion": "npm-run-all limpiar parcel:produccion"
   },
