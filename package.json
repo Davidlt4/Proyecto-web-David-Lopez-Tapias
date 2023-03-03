@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "parcel:desarrollo": "parcel ProyectoGenshinWeb/index.html",
-    "parcel:produccion": "parcel build ProyectoGenshinWeb/index.html --public-url './'",
+    "parcel:produccion": "parcel build ProyectoGenshinWeb/index.html",
     "limpiar": "rimraf dist .cache .parcel-cache .cache-loader",
     "desarrollo": "npm-run-all limpiar parcel:desarrollo",
     "produccion": "npm-run-all limpiar parcel:produccion"
@@ -29,6 +29,7 @@
     "rimraf": "^4.1.2"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
     "parcel": "^2.8.3",
     "parcel-plugin-imagemin": "^4.0.2",
     "sass": "^1.58.0"
